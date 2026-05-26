@@ -97,9 +97,6 @@ nav ul li a:hover{
 
 /* Hero Section */
 
-
-/* Hero Section */
-
 .hero{
 
     position:relative;
@@ -257,142 +254,6 @@ button:hover{
 
 
 
-/* Photo Card */
-
-.photo-card{
-
-    width:320px;
-    height:320px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    background:linear-gradient(
-        135deg,
-        #38bdf8 0%,
-        #0f172a 45%,
-        #020617 100%
-    );
-
-    border-radius:30px;
-
-    box-shadow:0 0 25px rgba(0,0,0,0.6);
-
-    padding:20px;
-
-    overflow:hidden;
-
-    transition:0.3s;
-}
-
-
-
-
-/* Intro Card */
-
-.intro-card{
-
-    background:linear-gradient(
-        145deg,
-        #111827 35%,
-        #1e293b 35%,
-        #0ea5e9 100%
-    );
-
-    padding:40px;
-
-    border-radius:30px;
-
-    box-shadow:0 0 25px rgba(0,0,0,0.6);
-
-    border:1px solid rgba(255,255,255,0.1);
-
-    max-width:500px;
-
-    transition:0.3s;
-}
-
-
-
-/* Hover Effects */
-
-.photo-card:hover,
-.intro-card:hover{
-    transform:translateY(-10px);
-}
-
-
-
-
-/* Intro Text */
-
-.intro-card h1{
-    font-size:50px;
-    margin-bottom:20px;
-}
-
-
-.intro-card p{
-    font-size:22px;
-    margin-bottom:25px;
-}
-
-
-
-
-/* Profile Photo */
-
-.profile-photo{
-
-    width:220px;
-    height:220px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    border:6px solid white;
-
-    box-shadow:0 0 30px #38bdf8;
-}
-
-
-
-
-/* Buttons */
-
-button{
-    padding:12px 25px;
-
-    border:none;
-
-    background:#38bdf8;
-
-    color:white;
-
-    font-size:18px;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    transition:0.3s;
-
-    font-weight:bold;
-
-    letter-spacing:1px;
-}
-
-
-button:hover{
-    background:#0ea5e9;
-    transform:scale(1.05);
-}
-
-
-
-
 /* About Section */
 
 .about{
@@ -427,7 +288,6 @@ button:hover{
 /* Skills Section */
 
 .skills{
-
 
     padding:100px 20px;
 
@@ -659,57 +519,30 @@ h2::after{
         height:auto;
 
         padding-top:120px;
-    }
 
-    .photo-card,
-    .intro-card{
-        width:90%;
-    }
-
-    .intro-card h1{
-        font-size:35px;
-    }
-
-    .intro-card p{
-        font-size:18px;
+        gap:40px;
     }
 
     .profile-photo{
-        width:160px;
-        height:160px;
+        width:220px;
+        height:220px;
+    }
+
+    .hero-right h1{
+        font-size:45px;
+    }
+
+    .hero-right h3{
+        font-size:28px;
+    }
+
+    .hero-right p{
+        font-size:18px;
     }
 
     .project-card{
         width:90%;
     }
-
-    .hero{
-    flex-direction:column;
-    text-align:center;
-    padding:120px 20px;
-    gap:40px;
-}
-
-
-.profile-photo{
-    width:220px;
-    height:220px;
-}
-
-
-.hero-right h1{
-    font-size:45px;
-}
-
-
-.hero-right h3{
-    font-size:28px;
-}
-
-
-.hero-right p{
-    font-size:18px;
-}
 
 }
 
@@ -805,10 +638,10 @@ h2::after{
     opacity:0.4;
 
     animation:float 6s infinite alternate;
+
+    z-index:0;
 }
 
-
-/* Circle 1 */
 
 .one{
 
@@ -822,8 +655,6 @@ h2::after{
 }
 
 
-/* Circle 2 */
-
 .two{
 
     width:250px;
@@ -835,8 +666,6 @@ h2::after{
     right:10%;
 }
 
-
-/* Circle 3 */
 
 .three{
 
@@ -851,8 +680,6 @@ h2::after{
 
 
 
-/* Animation */
-
 @keyframes float{
 
     from{
@@ -865,9 +692,7 @@ h2::after{
 
 }
 
-.circle{
-    z-index:0;
-}
+
 
 /* Active Navbar */
 
@@ -877,6 +702,8 @@ h2::after{
 
     text-shadow:0 0 10px #38bdf8;
 }
+
+
 
 /* Scroll Reveal Animation */
 
